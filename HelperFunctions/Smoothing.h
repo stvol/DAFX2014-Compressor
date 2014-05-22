@@ -1,5 +1,9 @@
-// This is the smoothing class
-
+/*------------------------------------------------------------------*\
+ This file is a smoothing Plugin.
+ public domain
+ Author: Jan Willhaus, Julian Kahnert (TGM) (Jade-Hochschule)
+\*------------------------------------------------------------------*/
+ 
 #ifndef _CSMOOTHING_H_TGM_
 #define _CSMOOTHING_H_TGM_
 
