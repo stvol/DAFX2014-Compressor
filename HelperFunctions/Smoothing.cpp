@@ -1,3 +1,9 @@
+/*------------------------------------------------------------------*\
+ This file is a smoothing Plugin.
+ public domain
+ Author: Jan Willhaus, Julian Kahnert (TGM) (Jade-Hochschule)
+\*------------------------------------------------------------------*/
+
 #include "Smoothing.h"
 #include <math.h>
 
