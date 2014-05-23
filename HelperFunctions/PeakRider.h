@@ -2,13 +2,13 @@
  Interface to a Peak Rider Plugin for mono audio signals.
  public domain
  Author: Matthias Stennes, Stephanus Volke (TGM) (Jade-Hochschule)
+ Version 1.0
  \*------------------------------------------------------------------*/
 
 #ifndef _PEAKRIDER_H_TGM_
 #define _PEAKRIDER_H_TGM_
 
 #include <math.h>
-#include <iostream>
 
 class CPeakRider
 {
@@ -21,7 +21,7 @@ public:
     {
         double outGain = (In > (m_alpha*m_lastOut))?(In):(m_lastOut);
         m_lastOut = m_alpha*m_lastOut + (1-m_alpha)* outGain;
-        double Out = In*outGain;
+        double Out = outGain;
         return Out;
     };
     

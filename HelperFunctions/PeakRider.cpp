@@ -2,6 +2,7 @@
  This file is a Peak Rider Plugin for mono audio signals.
  public domain
  Author: Matthias Stennes, Stephanus Volke (TGM) (Jade-Hochschule)
+ Version 1.0
  \*------------------------------------------------------------------*/
 
 #include "PeakRider.h"
