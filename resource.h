@@ -53,15 +53,32 @@ instrument determined by PLUG _IS _INST
 
 #define PLUG_DOES_STATE_CHUNKS 0
 
+
+
+
 // Unique IDs for each image resource.
-#define KNOB_ID 101
+#define BG_ID 100
+#define KNOB_GAINTABLE_ID 101
+#define KNOB_PEAKRIDER_ID 102
+#define RADIO_SMOOTHING_ID 103
+#define KNOB_SMOOTHING_ID 104
+#define KNOB_RMS_MIX_ID 105
 
 // Image resource locations for this plug.
-#define KNOB_FN "resources/img/knob.png"
+#define BG_FN "resources/img/dafx_comp_white.png"
+#define KNOB_GAINTABLE_FN "resources/img/GainTableKnob.png"
+#define KNOB_PEAKRIDER_FN "resources/img/RedStripe_33F_knob.png"
+#define RADIO_SMOOTHING_FN "resources/img/IRadioButtonsControl_x2.png"
+#define KNOB_SMOOTHING_FN "resources/img/Smoothing_Knob_60f.png"
+#define KNOB_RMS_MIX_FN "resources/img/RMS_Mix.png"
 
 // GUI default dimensions
-#define GUI_WIDTH 300
-#define GUI_HEIGHT 300
+#define GUI_WIDTH 960
+#define GUI_HEIGHT 544
+
+
+
+
 
 // on MSVC, you must define SA_API in the resource editor preprocessor macros as well as the c++ ones
 #if defined(SA_API) && !defined(OS_IOS)

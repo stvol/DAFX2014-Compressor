@@ -283,6 +283,12 @@
 		908ED31E192CC3A40053938C /* Smoothing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 908ED317192CC3A40053938C /* Smoothing.cpp */; };
 		908ED31F192CC3A40053938C /* Smoothing.h in Headers */ = {isa = PBXBuildFile; fileRef = 908ED318192CC3A40053938C /* Smoothing.h */; };
 		908ED320192CC3A40053938C /* Smoothing.h in Headers */ = {isa = PBXBuildFile; fileRef = 908ED318192CC3A40053938C /* Smoothing.h */; };
+		90A1F7BF192F5A3A001F72F6 /* dafx_comp_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 90A1F7B9192F5A3A001F72F6 /* dafx_comp_white.png */; };
+		90A1F7C0192F5A3A001F72F6 /* GainTableKnob.png in Resources */ = {isa = PBXBuildFile; fileRef = 90A1F7BA192F5A3A001F72F6 /* GainTableKnob.png */; };
+		90A1F7C1192F5A3A001F72F6 /* IRadioButtonsControl_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 90A1F7BB192F5A3A001F72F6 /* IRadioButtonsControl_x2.png */; };
+		90A1F7C2192F5A3A001F72F6 /* RedStripe_33F_knob.png in Resources */ = {isa = PBXBuildFile; fileRef = 90A1F7BC192F5A3A001F72F6 /* RedStripe_33F_knob.png */; };
+		90A1F7C3192F5A3A001F72F6 /* RMS_Mix.png in Resources */ = {isa = PBXBuildFile; fileRef = 90A1F7BD192F5A3A001F72F6 /* RMS_Mix.png */; };
+		90A1F7C4192F5A3A001F72F6 /* Smoothing_Knob_60f.png in Resources */ = {isa = PBXBuildFile; fileRef = 90A1F7BE192F5A3A001F72F6 /* Smoothing_Knob_60f.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -673,6 +679,12 @@
 		52FBBED30D0CF143001C8B8A /* resource.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = resource.h; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
 		908ED317192CC3A40053938C /* Smoothing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Smoothing.cpp; path = HelperFunctions/Smoothing.cpp; sourceTree = "<group>"; };
 		908ED318192CC3A40053938C /* Smoothing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Smoothing.h; path = HelperFunctions/Smoothing.h; sourceTree = "<group>"; };
+		90A1F7B9192F5A3A001F72F6 /* dafx_comp_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dafx_comp_white.png; sourceTree = "<group>"; };
+		90A1F7BA192F5A3A001F72F6 /* GainTableKnob.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GainTableKnob.png; sourceTree = "<group>"; };
+		90A1F7BB192F5A3A001F72F6 /* IRadioButtonsControl_x2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IRadioButtonsControl_x2.png; sourceTree = "<group>"; };
+		90A1F7BC192F5A3A001F72F6 /* RedStripe_33F_knob.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RedStripe_33F_knob.png; sourceTree = "<group>"; };
+		90A1F7BD192F5A3A001F72F6 /* RMS_Mix.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RMS_Mix.png; sourceTree = "<group>"; };
+		90A1F7BE192F5A3A001F72F6 /* Smoothing_Knob_60f.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Smoothing_Knob_60f.png; sourceTree = "<group>"; };
 		D2F7E65807B2D6F200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
@@ -1280,6 +1292,12 @@
 		4FD16A0213B6303B001D0217 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				90A1F7B9192F5A3A001F72F6 /* dafx_comp_white.png */,
+				90A1F7BA192F5A3A001F72F6 /* GainTableKnob.png */,
+				90A1F7BB192F5A3A001F72F6 /* IRadioButtonsControl_x2.png */,
+				90A1F7BC192F5A3A001F72F6 /* RedStripe_33F_knob.png */,
+				90A1F7BD192F5A3A001F72F6 /* RMS_Mix.png */,
+				90A1F7BE192F5A3A001F72F6 /* Smoothing_Knob_60f.png */,
 				4F23B9E413B647A00097A67E /* knob.png */,
 			);
 			name = img;
@@ -1734,8 +1752,14 @@
 			files = (
 				4F78D88613B6382B0032E0F3 /* Compressor.icns in Resources */,
 				4F78D89913B639100032E0F3 /* InfoPlist.strings in Resources */,
+				90A1F7C3192F5A3A001F72F6 /* RMS_Mix.png in Resources */,
+				90A1F7C4192F5A3A001F72F6 /* Smoothing_Knob_60f.png in Resources */,
+				90A1F7C1192F5A3A001F72F6 /* IRadioButtonsControl_x2.png in Resources */,
 				4F78D89A13B639100032E0F3 /* MainMenu.xib in Resources */,
+				90A1F7C0192F5A3A001F72F6 /* GainTableKnob.png in Resources */,
 				4F23B9FD13B647A00097A67E /* knob.png in Resources */,
+				90A1F7BF192F5A3A001F72F6 /* dafx_comp_white.png in Resources */,
+				90A1F7C2192F5A3A001F72F6 /* RedStripe_33F_knob.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
