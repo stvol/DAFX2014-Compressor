@@ -2,6 +2,7 @@
  this file is a Running RMS Plugin 
  public domain
  Author: Jonas Klug, Johannes Schmid (TGM) (Jade-Hochschule)
+ Version 1.0
  \*------------------------------------------------------------------*/
 
 #ifndef _CRUNNINGRMS_H_TGM
@@ -9,27 +10,27 @@
 #include <math.h>
 
 
-class RunningRMS
+class CRunningRMS
 {
 public:
-	RunningRMS(void);
-	RunningRMS(int SamplingFrequenz, int tau);
-	~RunningRMS(void);
-
+	CRunningRMS(void);
+	CRunningRMS(double SamplingFrequenz, double tau);
+	~CRunningRMS(void);
+	void reset(void){m_stateRMS = 0.;};
 
 	// RMS Berechnung
 	void setAlpha(double tau);
 	
-	inline double analyzeOneSampleRMS(double In)
+	inline double analyseOneSample(double In)
 	{
-	  m_statesRMS = (1 - m_alphaRMS)*(In*In) + m_alphaRMS*m_stateRMS;
-	  return sqrt(m_statesRMS);
+	  m_stateRMS = (1 - m_alphaRMS)*(In*In) + m_alphaRMS*m_stateRMS;
+	  return sqrt(m_stateRMS);
 	 };
-	void analyseSamplesRMS(double *In, int nSamples);
+	int analyseSamples(double *In, double *Out, int nSamples);
 	
 	
 private:
-	double m_alphaRMS, m_fs, m_stateRMS, RMS[];
+	double m_alphaRMS, m_fs, m_stateRMS;
 	
 };
 
