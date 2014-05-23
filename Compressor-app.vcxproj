@@ -271,6 +271,12 @@
     <ClInclude Include="app_wrapper\app_main.h" />
     <ClInclude Include="app_wrapper\app_resource.h" />
     <ClInclude Include="Compressor.h" />
+    <ClInclude Include="HelperFunctions\Delay.h" />
+    <ClInclude Include="HelperFunctions\GainTable.h" />
+    <ClInclude Include="HelperFunctions\PeakRider.h" />
+    <ClInclude Include="HelperFunctions\PeakRMSMix.h" />
+    <ClInclude Include="HelperFunctions\RunningRMS.h" />
+    <ClInclude Include="HelperFunctions\Smoothing.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
@@ -283,6 +289,12 @@
     <ClCompile Include="app_wrapper\app_dialog.cpp" />
     <ClCompile Include="app_wrapper\app_main.cpp" />
     <ClCompile Include="Compressor.cpp" />
+    <ClCompile Include="HelperFunctions\Delay.cpp" />
+    <ClCompile Include="HelperFunctions\GainTable.cpp" />
+    <ClCompile Include="HelperFunctions\PeakRider.cpp" />
+    <ClCompile Include="HelperFunctions\PeakRMSMix.cpp" />
+    <ClCompile Include="HelperFunctions\RunningRMS.cpp" />
+    <ClCompile Include="HelperFunctions\Smoothing.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Compressor.rc" />

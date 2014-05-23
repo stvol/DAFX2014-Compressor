@@ -9,10 +9,18 @@
 
 CGainTable::CGainTable(void)
 {
-    //m_Thres_log(0.),
-    //m_Knee_log(0.),
-    //m_Ratio(1.),
-    //m_Makeup_log(0.)
+    m_Thres_log= 0.;
+    m_Knee_log = 0.;
+    m_Ratio  = 1.;
+    m_Makeup_log = 0.;
+}
+
+CGainTable::CGainTable(double Thres, double Ratio, double Makeup, double KneeWidth)
+{
+    m_Thres_log= Thres;
+    m_Knee_log = KneeWidth;
+    m_Ratio  =Ratio;
+    m_Makeup_log =Makeup;
 }
 
 int CGainTable::processSamples(double *In, double *Out, int nSamples)
