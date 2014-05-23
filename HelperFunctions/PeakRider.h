@@ -19,8 +19,12 @@ public:
 	int analyseSamples(double *In, double *Out, int nSamples);
 	inline double analyseOneSample(double In)
     {
+        // y1[n] = max (x_L[n], alpha * y1[n - 1])
         double outGain = (In > (m_alpha*m_lastOut))?(In):(m_lastOut);
+        
+        //  yL[n] = alpha * yL[n - 1] + (1 - alpha)* y1[n]
         m_lastOut = m_alpha*m_lastOut + (1-m_alpha)* outGain;
+        
         double Out = outGain;
         return Out;
     };
