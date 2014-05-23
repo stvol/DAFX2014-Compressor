@@ -319,6 +319,14 @@
 		90A1F7F8192F5DA4001F72F6 /* Smoothing_Knob_60f.png in Resources */ = {isa = PBXBuildFile; fileRef = 90A1F7D6192F5DA4001F72F6 /* Smoothing_Knob_60f.png */; };
 		90A1F7F9192F5DA4001F72F6 /* Smoothing_Knob_60f.png in Resources */ = {isa = PBXBuildFile; fileRef = 90A1F7D6192F5DA4001F72F6 /* Smoothing_Knob_60f.png */; };
 		90A1F7FA192F5DA4001F72F6 /* Smoothing_Knob_60f.png in Resources */ = {isa = PBXBuildFile; fileRef = 90A1F7D6192F5DA4001F72F6 /* Smoothing_Knob_60f.png */; };
+		90A1F80B192F6004001F72F6 /* GainTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 90A1F809192F6004001F72F6 /* GainTable.cpp */; };
+		90A1F80C192F6004001F72F6 /* GainTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 90A1F809192F6004001F72F6 /* GainTable.cpp */; };
+		90A1F80D192F6004001F72F6 /* GainTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 90A1F809192F6004001F72F6 /* GainTable.cpp */; };
+		90A1F80E192F6004001F72F6 /* GainTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 90A1F809192F6004001F72F6 /* GainTable.cpp */; };
+		90A1F80F192F6004001F72F6 /* GainTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 90A1F809192F6004001F72F6 /* GainTable.cpp */; };
+		90A1F810192F6004001F72F6 /* GainTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 90A1F809192F6004001F72F6 /* GainTable.cpp */; };
+		90A1F811192F6004001F72F6 /* GainTable.h in Headers */ = {isa = PBXBuildFile; fileRef = 90A1F80A192F6004001F72F6 /* GainTable.h */; };
+		90A1F812192F6004001F72F6 /* GainTable.h in Headers */ = {isa = PBXBuildFile; fileRef = 90A1F80A192F6004001F72F6 /* GainTable.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -715,6 +723,8 @@
 		90A1F7D4192F5DA4001F72F6 /* RedStripe_33F_knob.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RedStripe_33F_knob.png; path = resources/img/RedStripe_33F_knob.png; sourceTree = "<group>"; };
 		90A1F7D5192F5DA4001F72F6 /* RMS_Mix.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RMS_Mix.png; path = resources/img/RMS_Mix.png; sourceTree = "<group>"; };
 		90A1F7D6192F5DA4001F72F6 /* Smoothing_Knob_60f.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Smoothing_Knob_60f.png; path = resources/img/Smoothing_Knob_60f.png; sourceTree = "<group>"; };
+		90A1F809192F6004001F72F6 /* GainTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GainTable.cpp; path = HelperFunctions/GainTable.cpp; sourceTree = "<group>"; };
+		90A1F80A192F6004001F72F6 /* GainTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GainTable.h; path = HelperFunctions/GainTable.h; sourceTree = "<group>"; };
 		D2F7E65807B2D6F200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
@@ -802,6 +812,8 @@
 				52FBBED00D0CF139001C8B8A /* Compressor.cpp */,
 				908ED317192CC3A40053938C /* Smoothing.cpp */,
 				908ED318192CC3A40053938C /* Smoothing.h */,
+				90A1F809192F6004001F72F6 /* GainTable.cpp */,
+				90A1F80A192F6004001F72F6 /* GainTable.h */,
 				089C167CFE841241C02AAC07 /* Resources */,
 				32C88E010371C26100C91783 /* Other Sources */,
 				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
@@ -1430,6 +1442,7 @@
 				4F78D94213B63BA50032E0F3 /* IKeyboardControl.h in Headers */,
 				4F78D94413B63BA50032E0F3 /* IPlugBase.h in Headers */,
 				4F78D94613B63BA50032E0F3 /* IGraphicsMac.h in Headers */,
+				90A1F812192F6004001F72F6 /* GainTable.h in Headers */,
 				4F78D94913B63BA50032E0F3 /* Containers.h in Headers */,
 				4F78D94A13B63BA50032E0F3 /* Hosts.h in Headers */,
 				4F78D95113B63BA50032E0F3 /* IGraphicsCocoa.h in Headers */,
@@ -1470,6 +1483,7 @@
 				4F78DA9013B640050032E0F3 /* swell-functions.h in Headers */,
 				4F78DA9113B640050032E0F3 /* swell-internal.h in Headers */,
 				4F78DA9213B640050032E0F3 /* swell-types.h in Headers */,
+				90A1F811192F6004001F72F6 /* GainTable.h in Headers */,
 				4F78DA9313B640050032E0F3 /* aeffect.h in Headers */,
 				4F78DA9413B640050032E0F3 /* aeffectx.h in Headers */,
 				4F78DA9513B640050032E0F3 /* IPlug_include_in_plug_hdr.h in Headers */,
@@ -1880,6 +1894,7 @@
 				4F78D9C313B63BA50032E0F3 /* Log.cpp in Sources */,
 				4F78D9C413B63BA50032E0F3 /* IPopupMenu.cpp in Sources */,
 				4F78D9C813B63BA50032E0F3 /* IParam.cpp in Sources */,
+				90A1F80C192F6004001F72F6 /* GainTable.cpp in Sources */,
 				4F78D9C913B63BA50032E0F3 /* IControl.cpp in Sources */,
 				4F78D9F313B63C6A0032E0F3 /* IPlugVST.cpp in Sources */,
 				4FDA440C13F3E4F2000B4551 /* IBitmapMonoText.cpp in Sources */,
@@ -1894,6 +1909,7 @@
 				4FD16D0E13B634BF001D0217 /* swell-gdi.mm in Sources */,
 				4F78D94513B63BA50032E0F3 /* IPlugBase.cpp in Sources */,
 				4F78D94713B63BA50032E0F3 /* IPlugStructs.cpp in Sources */,
+				90A1F80E192F6004001F72F6 /* GainTable.cpp in Sources */,
 				4F78D94B13B63BA50032E0F3 /* Hosts.cpp in Sources */,
 				4F78D94D13B63BA50032E0F3 /* IGraphicsMac.mm in Sources */,
 				4F78D94E13B63BA50032E0F3 /* IGraphics.cpp in Sources */,
@@ -1933,6 +1949,7 @@
 				4F7F5CAD13E9607A002918FD /* digicode1.cpp in Sources */,
 				4F7F5CAE13E9607A002918FD /* digicode2.cpp in Sources */,
 				4F7F5CAF13E9607A002918FD /* digicode3.cpp in Sources */,
+				90A1F80F192F6004001F72F6 /* GainTable.cpp in Sources */,
 				4F7F5CB013E9607A002918FD /* IPlugCustomUI.cpp in Sources */,
 				4F7F5CB113E9607A002918FD /* IPlugGroup.cpp in Sources */,
 				4F7F5CB213E9607A002918FD /* IPlugProcess.cpp in Sources */,
@@ -1959,6 +1976,7 @@
 				4F9828C0140A9EB700F3FCC1 /* IPopupMenu.cpp in Sources */,
 				4F9828C1140A9EB700F3FCC1 /* IParam.cpp in Sources */,
 				4F9828C2140A9EB700F3FCC1 /* IControl.cpp in Sources */,
+				90A1F80D192F6004001F72F6 /* GainTable.cpp in Sources */,
 				4F9828C3140A9EB700F3FCC1 /* IBitmapMonoText.cpp in Sources */,
 				4F9828C4140A9EB700F3FCC1 /* IPlugVST3.cpp in Sources */,
 				4F9828C5140A9EB700F3FCC1 /* memorystream.cpp in Sources */,
@@ -1999,6 +2017,7 @@
 				4FB600211567CB0A0020189A /* Log.cpp in Sources */,
 				4FB600221567CB0A0020189A /* IPopupMenu.cpp in Sources */,
 				4FB600231567CB0A0020189A /* IParam.cpp in Sources */,
+				90A1F810192F6004001F72F6 /* GainTable.cpp in Sources */,
 				4FB600241567CB0A0020189A /* IControl.cpp in Sources */,
 				4FB600251567CB0A0020189A /* IBitmapMonoText.cpp in Sources */,
 				4FB600261567CB0A0020189A /* AAX_Exports.cpp in Sources */,
@@ -2017,6 +2036,7 @@
 				4FD16D0C13B634BF001D0217 /* swell-gdi.mm in Sources */,
 				4FD16D1613B634D2001D0217 /* swell-ini.cpp in Sources */,
 				4FD16D3A13B63582001D0217 /* swell-kb.mm in Sources */,
+				90A1F80B192F6004001F72F6 /* GainTable.cpp in Sources */,
 				4FD16D3C13B6358C001D0217 /* swell-miscdlg.mm in Sources */,
 				4FD16D3E13B63595001D0217 /* swell-menu.mm in Sources */,
 				4FD16D4013B635A0001D0217 /* swell-misc.mm in Sources */,
