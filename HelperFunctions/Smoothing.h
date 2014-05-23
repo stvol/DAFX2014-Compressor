@@ -2,6 +2,7 @@
  This file is a smoothing Plugin.
  public domain
  Author: Jan Willhaus, Julian Kahnert (TGM) (Jade-Hochschule)
+ Version 1.0
 \*------------------------------------------------------------------*/
  
 #ifndef _CSMOOTHING_H_TGM_
@@ -10,7 +11,15 @@
 class CSmoothing
 {
 public:
+    enum SmoothType
+	{
+		log = 0,
+		truelog,
+		linear
+	};
+
 	CSmoothing(void);
+	CSmoothing(double att, double rel, SmoothType smoothingType);
     
 	~CSmoothing(void);
     
@@ -61,8 +70,7 @@ public:
     };
     
     int setSmoothingRates(double tauAttack, double tauRelease);
-    
-    int setSmoothingType(unsigned int newSmoothingType);
+    int setSmoothingType(SmoothType newSmoothingType); // 0 = logar, 1 = truelog , 2 = linear
 
 
 protected:

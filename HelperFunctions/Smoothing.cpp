@@ -12,6 +12,13 @@ CSmoothing::CSmoothing(void) {
     
 	reset();
 }
+CSmoothing::CSmoothing(double att, double rel, SmoothType smoothingType)
+{
+
+    smoothingType = smoothingType;
+	setSmoothingRates(att, rel);
+	reset();
+}
 
 /* Destructor */
 CSmoothing::~CSmoothing(void) {
@@ -57,7 +64,9 @@ int CSmoothing::processSamples(double *In, double *Out, int nSamples) {
 
 int CSmoothing::setSmoothingRates(double tauAttack, double tauRelease) {
     
-    switch (smoothingType) {
+    tau_att = tauAttack;
+	tau_rel = tauRelease;
+	switch (smoothingType) {
         case 0:
             att_rate = exp(-1/(tau_att*fs));
             rel_rate = exp(-1/(tau_rel*fs));
@@ -82,7 +91,7 @@ int CSmoothing::setSmoothingRates(double tauAttack, double tauRelease) {
 }
 
 
-int CSmoothing::setSmoothingType(unsigned int newSmoothingType) {
+int CSmoothing::setSmoothingType(SmoothType newSmoothingType) {
     
     smoothingType = newSmoothingType;
     
