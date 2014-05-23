@@ -6,21 +6,25 @@
 #include "PeakRMSMix.h"
 
 
-PeakRMSMix::PeakRMSMix(void)
+CPeakRMSMix::CPeakRMSMix(void)
 {
-	m_MixRatio = 0.5
+	m_MixRatio = 0.5;
 }
 
-PeakRMSMix::~PeakRMSMix(void)
+CPeakRMSMix::CPeakRMSMix(double mixRatio)
+{
+	m_MixRatio = mixRatio;
+}
+CPeakRMSMix::~CPeakRMSMix(void)
 {
 }
 
-void PeakRMSMix::setMixRatio(double MixRatio)
+void CPeakRMSMix::setMixRatio(double MixRatio)
 {
 	m_MixRatio = MixRatio;
 }
 
-void PeakRMSMix::samplesMix(double *InPeak, double *InRMS, int nSamples)
+int CPeakRMSMix::processSamples(double *InPeak, double *InRMS, double * Out, int nSamples)
 {
 	
 	int kk;
@@ -30,8 +34,9 @@ void PeakRMSMix::samplesMix(double *InPeak, double *InRMS, int nSamples)
 	  InPeak++;
 	  double InSampleRMS = *InRMS;
 	  InRMS++;
-
-	  Mix[kk] = oneSampleMix(InSamplePeak, InSampleRMS) ;
+      *Out = processOneSample(InSamplePeak,InSampleRMS);
+      Out++;
 	}
+    return 0;
 }
 
