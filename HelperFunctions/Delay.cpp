@@ -9,11 +9,23 @@
 
 CDelay::CDelay()
 {
+	m_SamplesOfDelay = 80;
+	m_buffer = new double[m_SamplesOfDelay];
+
+    reset();
+}
+CDelay::CDelay(int Delay)
+{
+	m_SamplesOfDelay = Delay;
+	m_buffer = new double[m_SamplesOfDelay];
     reset();
 }
 
 CDelay::~CDelay(void)
-{}
+{
+	delete[] m_buffer;
+	m_buffer = 0;
+}
 
 void CDelay::reset(void)
 {
@@ -22,6 +34,7 @@ void CDelay::reset(void)
     {
         m_buffer[ii] = 0;
     }
+	m_Counter = 0;
 }
 
 
